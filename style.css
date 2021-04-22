@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 10;
+}
+
+html {
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-nav {
+    margin-top: 15 px;
+    list-style: none;
+    padding-left: 15;
+    background-color: blue;
+}
+
+.main-nav_item {
+    display: inline-block;
+}
+
+.main-nav_item a {
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.main-nav_item a:hover {
+    color: red;
+}
+
+.main-nav_item a:active {
+    color: blue;
+}
+
+#page-title {
+    color: rebeccapurple;
+    font-size: 40px;
+}
+
+p {
+    color: red;
+    font-size: 20px;
+}
+
+.texto {
+    color: red;
+}

@@ -6,7 +6,7 @@
         <meta name="robots" content="index, follow" />
         <title> Data Krakens</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css"> 
+        <link rel="stylesheet" href="./style.css"> 
     </head>
     <body>
         <header>
@@ -14,13 +14,20 @@
         </header>
         <main>
             <section>
-            <h1>Bienvenidx a Data Krakens!</h1>
+            <nav>
+                <ul class="main-nav">
+                    <li class="main-nav_item"><a href="">Home</a></li>
+                    <li class="main-nav_item"><a href="">Cursos</a></li>
+                    <li class="main-nav_item"><a href="">Documentación</a></li>
+                </ul>
+            </nav>
+            <h1 id="page-title" class="title">Bienvenidx a Data Krakens!</h1>
             <figure>
                 <img src="./img/logo.png"
                  alt="Ciencia de Datos"/>
             <p>El mejor lugar para aprender Ciencia de Datos</p>
             <p>Aquí aprenderás</p>
-            <ul>
+            <ul class="texto">
                 <li> Análisis de Datos </li>
                 <li> Business Intelligence </li>
                 <li> Ingeniería de Datos </li>
@@ -28,8 +35,8 @@
                 <li> Machine Learning e Inteligencia Artificial</li>
             </ul>
             <ol></ol>
-            <h2>¿Quieres unirte?</h2>
-            <h3>¿Qué area te interesa?</h3>
+            <h2 class="texto">¿Quieres unirte?</h2>
+            <h3 class="texto">¿Qué area te interesa?</h3>
             <input list="cursos">
             <datalist id="cursos">
                 <option value="Análisis de Datos"></option>
@@ -38,26 +45,26 @@
                 <option value="Arquitectura de Datos"></option>
                 <option value="Machine Learning e Inteligencia Artificial"></option>
             </datalist>
-            <h3>Agenda una cita:</h3>
+            <h3 class="texto">Agenda una cita:</h3>
             <form action="">
                 <label for="nombre">
-                    <span>Nombre: </span>
+                    <span class="texto">Nombre: </span>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required/>
                 </label>
                 <label for="email">
-                    <span>Email: </span>
+                    <span class="texto">Email: </span>
                     <input type="email" id="email" name="email" placeholder="Tu email" autocomplete="email" required/>
                 </label>
                 <label for="pais">
-                    <span>Pais: </span>
+                    <span class="texto">Pais: </span>
                     <input type="text" id="pais" name="pais" placeholder="Tu pais" autocomplete="country" required/>
                 </label>
                 <label for="cp">
-                    <span>Código Postal: </span>
+                    <span class="texto">Código Postal: </span>
                     <input type="number" id="cp" name="cp" placeholder="Tu código postal" autocomplete="postal-code" required/>
                 </label>
                 <label for="fecha">
-                    <span>Fecha: </span>
+                    <span class="texto">Fecha: </span>
                     <input type="datetime-local" id="fecha" name="fecha" required/>
                 </label>
                 <input type="submit" value="Empezar ya"/>
